@@ -16,30 +16,55 @@
             text-align: left;
             font-size: 25px;
             margin: 50px;
-            background-color: black;
-            color: wheat;
+            background: #5C258D;
+            background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+            background: linear-gradient(to right, #4389A2, #5C258D);
         }
 
         li {
+            color: #fff;
             text-align: justify;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            border-bottom: 2px solid #fff;
+        }
+
+        h2 {
+            border-bottom: 2px solid #fff;
         }
 
         h1,
         h2 {
+            color: wheat;
             text-align: center;
         }
 
         .btn {
             background-color: wheat;
             color: black;
+            padding: .4rem 2rem;
             font-size: 25px;
+            border-radius: 5rem;
+            margin-bottom: -10rem;
+        }
+
+        .btn:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 720px) {
+            .btn {
+                margin-bottom: 0;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="d-flex justify-content-center align-items-center flex-column">
 
         <h1>Welcome to Hacktoberfest 2023</h1>
         <h2>About of event</h2>
@@ -64,7 +89,8 @@
         </p>
 
         <div class="text-center">
-            <button type="button" class="btn" onclick = "window.location.href='https://hacktoberfest.com/';" >Website Link</button>
+            <button type="button" class="btn" onclick="window.location.href='https://hacktoberfest.com/';">Website
+                Link</button>
         </div>
     </div>
 </body>
